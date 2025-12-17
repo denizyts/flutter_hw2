@@ -61,7 +61,7 @@ class MyHomePage extends StatelessWidget {
             ),
         ), 
         Expanded(
-          flex: 1,
+          // flex: 1,
           child: Container(
             color: Colors.blue,
             child: Center(child:NumberFinder())

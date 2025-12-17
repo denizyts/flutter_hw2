@@ -69,7 +69,7 @@ class MyHomePage extends StatelessWidget {
         Container(
             color: Colors.red,
             child: Text('BOTTOM'),
-            alignment: Alignment(-1, 0),
+            alignment: Alignment(0, 0),
           ),
       ])
     );  

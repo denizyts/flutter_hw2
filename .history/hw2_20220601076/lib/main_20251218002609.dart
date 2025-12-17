@@ -37,7 +37,6 @@ class MyHomePage extends StatelessWidget {
           Container(
             color: Colors.red,
             child: Text('TOP'),
-            alignment: Alignment(-1, 0),
           ),
           Expanded(
             flex:2,
@@ -65,12 +64,7 @@ class MyHomePage extends StatelessWidget {
           child: Container(
             color: Colors.blue,
             child: Center(child:NumberFinder())
-        )),
-        Container(
-            color: Colors.red,
-            child: Text('BOTTOM'),
-            alignment: Alignment(-1, 0),
-          ),
+          ))
       ])
     );  
   }

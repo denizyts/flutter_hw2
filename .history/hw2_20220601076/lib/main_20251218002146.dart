@@ -32,47 +32,28 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('mybar'),
       ),
-      body: Column(
-        children: [
-          Container(
-            color: Colors.red,
-            child: Text('TOP'),
-            alignment: Alignment(-1, 0),
+    body: Column(
+      body: SingleChildScrollView (
+        child: Flexible(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (int i = 0 ; i < 100; i++) ...[
+                Text('deniz'),
+                Text('yetis'),
+                Text('ieu'),
+                Text('flutter'),
+                Text('se380'),
+                NumberFinder()
+              ]
+            ],
           ),
-          Expanded(
-            flex:2,
-            child: SingleChildScrollView (
-              child: Flexible(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  // crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    for (int i = 0 ; i < 100; i++) ...[
-                      Text('deniz'),
-                      Text('yetis'),
-                      Text('ieu'),
-                      Text('flutter'),
-                      Text('se380'),
-                      NumberFinder()
-                    ]
-                  ],
-                ),
-              ),
-            ),
-        ), 
-        Expanded(
-          flex: 1,
-          child: Container(
-            color: Colors.blue,
-            child: Center(child:NumberFinder())
-        )),
-        Container(
-            color: Colors.red,
-            child: Text('BOTTOM'),
-            alignment: Alignment(-1, 0),
-          ),
-      ])
-    );  
+        ),
+      )
+
+      )
+);
   }
 
 }
