@@ -27,29 +27,27 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const frame = [
+            Text('deniz'),
+            Text('yetis'),
+            Text('ieu'),
+            Text('flutter'),
+            Text('se380'),
+            NumberFinder()
+          ];
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('mybar'),
       ),
-    body: SingleChildScrollView (
-      child: Flexible(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            for (int i = 0 ; i < 100; i++) ...[
-              Text('deniz'),
-              Text('yetis'),
-              Text('ieu'),
-              Text('flutter'),
-              Text('se380'),
-              NumberFinder()
-            ]
+            for (int)
           ],
         ),
       ),
-    )
 
     );
   }

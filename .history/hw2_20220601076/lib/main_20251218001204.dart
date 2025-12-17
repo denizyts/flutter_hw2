@@ -33,10 +33,11 @@ class MyHomePage extends StatelessWidget {
         title: Text('mybar'),
       ),
     body: SingleChildScrollView (
-      child: Flexible(
+      child: Center(
+        cr
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          // crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             for (int i = 0 ; i < 100; i++) ...[
               Text('deniz'),

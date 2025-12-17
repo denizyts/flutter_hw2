@@ -32,11 +32,11 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('mybar'),
       ),
-    body: SingleChildScrollView (
-      child: Flexible(
+      body: SingleChildScrollView (
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          // crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             for (int i = 0 ; i < 100; i++) ...[
               Text('deniz'),
@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
-    )
+      )
 
     );
   }
