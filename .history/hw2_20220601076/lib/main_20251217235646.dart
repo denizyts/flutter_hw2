@@ -59,6 +59,7 @@ class NumberFinder extends StatefulWidget {
 
 class _NumberFinderState extends State<NumberFinder>{
   int _randomNumber = -1;    
+
   final Random _random = Random();
 
   void _generateRandomNumber(){

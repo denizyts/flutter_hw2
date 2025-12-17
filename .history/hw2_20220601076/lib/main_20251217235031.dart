@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -41,7 +39,7 @@ class MyHomePage extends StatelessWidget {
             const Text('ieu'),
             const Text('flutter'),
             const Text('se380'),
-            NumberFinder()
+            ElevatedButton(onPressed: ()=>{}, child: const Text('hey'), )
           ],
         ),
       ),
@@ -58,24 +56,5 @@ class NumberFinder extends StatefulWidget {
 }
 
 class _NumberFinderState extends State<NumberFinder>{
-  int _randomNumber = -1;    
-  final Random _random = Random();
-
-  void _generateRandomNumber(){
-    setState(() {
-            
-            _randomNumber = 10 + _random.nextInt(101); 
-    });
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        ElevatedButton(onPressed: _generateRandomNumber, child:  
-              const Text('Find out-deniz')),
-        Text('$_randomNumber')
-      ]
-    );
-  }
+  int 
 }

@@ -41,7 +41,7 @@ class MyHomePage extends StatelessWidget {
             const Text('ieu'),
             const Text('flutter'),
             const Text('se380'),
-            NumberFinder()
+            
           ],
         ),
       ),
@@ -59,21 +59,22 @@ class NumberFinder extends StatefulWidget {
 
 class _NumberFinderState extends State<NumberFinder>{
   int _randomNumber = -1;    
+
   final Random _random = Random();
 
   void _generateRandomNumber(){
     setState(() {
-            
-            _randomNumber = 10 + _random.nextInt(101); 
+      _randomNumber = 10 + _random.nextInt(101); 
     });
   }
+
+
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        ElevatedButton(onPressed: _generateRandomNumber, child:  
-              const Text('Find out-deniz')),
+        ElevatedButton(onPressed: _generateRandomNumber, child:  const Text('Find out-deniz')),
         Text('$_randomNumber')
       ]
     );

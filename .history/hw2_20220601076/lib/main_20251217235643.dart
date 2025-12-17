@@ -59,12 +59,12 @@ class NumberFinder extends StatefulWidget {
 
 class _NumberFinderState extends State<NumberFinder>{
   int _randomNumber = -1;    
+
   final Random _random = Random();
 
   void _generateRandomNumber(){
     setState(() {
-            
-            _randomNumber = 10 + _random.nextInt(101); 
+      _randomNumber = 10 + _random.nextInt(101); 
     });
   }
   @override
