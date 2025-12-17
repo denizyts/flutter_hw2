@@ -36,15 +36,13 @@ class MyHomePage extends StatelessWidget {
             const Text('yetis'),
             const Text('ieu'),
             const Text('flutter'),
-            const Text('se380'),
-            ElevatedButton(onPressed: ()=>{}, child: const Text('hey'), )
+            const Text(''),
           ],
         ),
       ),
 
     );
   }
-
 }
 
 

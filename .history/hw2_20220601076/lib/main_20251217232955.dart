@@ -33,18 +33,16 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: .center,
           children: [
             const Text('deniz'),
-            const Text('yetis'),
-            const Text('ieu'),
-            const Text('flutter'),
-            const Text('se380'),
-            ElevatedButton(onPressed: ()=>{}, child: const Text('hey'), )
+            const Text('You have pushed the button this many times:'),
+            const Text('You have pushed the button this many times:'),
+            const Text('You have pushed the button this many times:'),
+            const Text('You have pushed the button this many times:'),
           ],
         ),
       ),
 
     );
   }
-
 }
 
 

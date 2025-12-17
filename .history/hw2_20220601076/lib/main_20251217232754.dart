@@ -20,31 +20,38 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+class MyHomePage extends StatelesslWidget {
+  const MyHomePage({});
 
   
 
   @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: .center,
           children: [
-            const Text('deniz'),
-            const Text('yetis'),
-            const Text('ieu'),
-            const Text('flutter'),
-            const Text('se380'),
-            ElevatedButton(onPressed: ()=>{}, child: const Text('hey'), )
+            const Text('You have pushed the button this many times:'),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
           ],
         ),
       ),
-
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
     );
   }
-
 }
 
 

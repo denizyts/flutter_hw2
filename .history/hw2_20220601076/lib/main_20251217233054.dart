@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
             const Text('ieu'),
             const Text('flutter'),
             const Text('se380'),
-            ElevatedButton(onPressed: ()=>{}, child: const Text('hey'), )
+            ElevatedButton(onPressed: onPressed, child: child)
           ],
         ),
       ),
@@ -45,6 +45,9 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
+  Function onPressed () {
+
+  }
 }
 
 
